@@ -242,6 +242,7 @@ var coreBidderNames []BidderName = []BidderName{
 	BidderZetaGlobalSsp,
 	BidderZmaticoo,
 	BidderEskimi,
+	BidderUsEskimi,
 }
 
 func GetAliasBidderToParent() map[BidderName]BidderName {
@@ -572,6 +573,7 @@ const (
 	BidderZetaGlobalSsp     BidderName = "zeta_global_ssp"
 	BidderZmaticoo          BidderName = "zmaticoo"
 	BidderEskimi            BidderName = "eskimi"
+	BidderUsEskimi          BidderName = "usEskimi"
 )
 
 // CoreBidderNames returns a slice of all core bidders.

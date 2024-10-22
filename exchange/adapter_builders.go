@@ -94,6 +94,7 @@ import (
 	"github.com/prebid/prebid-server/v2/adapters/eplanning"
 	"github.com/prebid/prebid-server/v2/adapters/epom"
 	"github.com/prebid/prebid-server/v2/adapters/escalax"
+	"github.com/prebid/prebid-server/v2/adapters/eskimi"
 	"github.com/prebid/prebid-server/v2/adapters/flipp"
 	"github.com/prebid/prebid-server/v2/adapters/freewheelssp"
 	"github.com/prebid/prebid-server/v2/adapters/frvradn"
@@ -204,6 +205,7 @@ import (
 	"github.com/prebid/prebid-server/v2/adapters/undertone"
 	"github.com/prebid/prebid-server/v2/adapters/unicorn"
 	"github.com/prebid/prebid-server/v2/adapters/unruly"
+	"github.com/prebid/prebid-server/v2/adapters/usEskimi"
 	"github.com/prebid/prebid-server/v2/adapters/vidazoo"
 	"github.com/prebid/prebid-server/v2/adapters/videobyte"
 	"github.com/prebid/prebid-server/v2/adapters/videoheroes"
@@ -223,7 +225,6 @@ import (
 	"github.com/prebid/prebid-server/v2/adapters/zeroclickfraud"
 	"github.com/prebid/prebid-server/v2/adapters/zeta_global_ssp"
 	"github.com/prebid/prebid-server/v2/adapters/zmaticoo"
-	"github.com/prebid/prebid-server/v2/adapters/eskimi"
 	"github.com/prebid/prebid-server/v2/openrtb_ext"
 )
 
@@ -454,6 +455,7 @@ func newAdapterBuilders() map[openrtb_ext.BidderName]adapters.Builder {
 		openrtb_ext.BidderYieldone:          yieldone.Builder,
 		openrtb_ext.BidderZeroClickFraud:    zeroclickfraud.Builder,
 		openrtb_ext.BidderEskimi:            eskimi.Builder,
+		openrtb_ext.BidderUsEskimi:          usEskimi.Builder,
 		openrtb_ext.BidderZetaGlobalSsp:     zeta_global_ssp.Builder,
 		openrtb_ext.BidderZmaticoo:          zmaticoo.Builder,
 	}
