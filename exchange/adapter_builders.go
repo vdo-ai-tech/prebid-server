@@ -140,6 +140,7 @@ import (
 	"github.com/prebid/prebid-server/v2/adapters/mgidX"
 	"github.com/prebid/prebid-server/v2/adapters/minutemedia"
 	"github.com/prebid/prebid-server/v2/adapters/missena"
+	"github.com/prebid/prebid-server/v2/adapters/mobAvenue"
 	"github.com/prebid/prebid-server/v2/adapters/mobfoxpb"
 	"github.com/prebid/prebid-server/v2/adapters/mobilefuse"
 	"github.com/prebid/prebid-server/v2/adapters/motorik"
@@ -456,6 +457,7 @@ func newAdapterBuilders() map[openrtb_ext.BidderName]adapters.Builder {
 		openrtb_ext.BidderZeroClickFraud:    zeroclickfraud.Builder,
 		openrtb_ext.BidderEskimi:            eskimi.Builder,
 		openrtb_ext.BidderUsEskimi:          usEskimi.Builder,
+		openrtb_ext.BidderMobAvenue:         mobAvenue.Builder,
 		openrtb_ext.BidderZetaGlobalSsp:     zeta_global_ssp.Builder,
 		openrtb_ext.BidderZmaticoo:          zmaticoo.Builder,
 	}
