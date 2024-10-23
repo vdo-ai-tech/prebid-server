@@ -103,6 +103,7 @@ import (
 	"github.com/prebid/prebid-server/v2/adapters/globalsun"
 	"github.com/prebid/prebid-server/v2/adapters/gothamads"
 	"github.com/prebid/prebid-server/v2/adapters/grid"
+	"github.com/prebid/prebid-server/v2/adapters/groundTruth"
 	"github.com/prebid/prebid-server/v2/adapters/gumgum"
 	"github.com/prebid/prebid-server/v2/adapters/huaweiads"
 	"github.com/prebid/prebid-server/v2/adapters/imds"
@@ -458,6 +459,7 @@ func newAdapterBuilders() map[openrtb_ext.BidderName]adapters.Builder {
 		openrtb_ext.BidderEskimi:            eskimi.Builder,
 		openrtb_ext.BidderUsEskimi:          usEskimi.Builder,
 		openrtb_ext.BidderMobAvenue:         mobAvenue.Builder,
+		openrtb_ext.BidderGroundTruth:       groundTruth.Builder,
 		openrtb_ext.BidderZetaGlobalSsp:     zeta_global_ssp.Builder,
 		openrtb_ext.BidderZmaticoo:          zmaticoo.Builder,
 	}
